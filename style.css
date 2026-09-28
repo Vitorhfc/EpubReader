@@ -1,4 +1,4 @@
-  :root{
+:root{
     --ink:#12161D; --ink-2:#1B212C; --ink-3:#232A38; --hair:#2B3242;
     --paper:#E9E4D8; --paper-dim:#9AA1B2; --brass:#C9A227; --brass-soft:rgba(201,162,39,.35);
     --danger:#C1584A; --radius-s:4px; --radius-m:10px;
@@ -80,3 +80,9 @@
   #loading-overlay{ position:fixed; inset:0; background:rgba(18,22,29,.88); display:flex; align-items:center; justify-content:center; z-index:20; flex-direction:column; gap:12px; }
   .spinner{ width:26px; height:26px; border-radius:50%; border:2px solid var(--hair); border-top-color:var(--brass); animation:spin .8s linear infinite; }
   @keyframes spin{ to{ transform:rotate(360deg); } }
+
+  /* MODOS DE LEITURA / EFEITOS */
+  .viewport-wrap{ background:var(--reader-bg, var(--ink)); }
+  .mode-scroll .tap-chevron{ display:none; }
+  .font-toggle button{ padding:7px 6px; }
+  .panel.no-effect .effect-row{ opacity:.45; }
